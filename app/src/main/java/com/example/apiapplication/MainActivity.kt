@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val star = findViewById<Button>(R.id.post_btn)
         val get = findViewById<Button>(R.id.get_btn)
+        val update = findViewById<Button>(R.id.update_btn)
 
         star.setOnClickListener {
             val x = Intent(applicationContext, Post_page::class.java)
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         get.setOnClickListener {
             val x = Intent(applicationContext, GetEmployee::class.java)
             startActivity(x)
+        }
+
+        update.setOnClickListener {
+            val x = Intent(applicationContext, Post_page::class.java)
         }
 
 

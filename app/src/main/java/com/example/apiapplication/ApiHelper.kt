@@ -67,32 +67,32 @@ class ApiHelper(var context: Context) {
     }//END GET
 
 
-    fun getById(api: String, body:JSONObject, callBack: CallBack) {
-        val client = AsyncHttpClient(true, 80, 443)
-        val con_body = StringEntity(body.toString())
-        //GET to API
-        client.get(context, api, con_body, "application/json",
-            object : JsonHttpResponseHandler(){
-                override fun onSuccess(
-                    statusCode: Int,
-                    headers: Array<out Header>?,
-                    response: JSONArray
-                ) {
-                    callBack.onSuccess(response.toString())
-                    //Toast.makeText(context, "Response $response ", Toast.LENGTH_SHORT).show()
-                }
-                override fun onFailure(
-                    statusCode: Int,
-                    headers: Array<out Header>?,
-                    responseString: String?,
-                    throwable: Throwable?
-                ) {
-                    Toast.makeText(context, "Error Occurred"+throwable.toString(), Toast.LENGTH_LONG).show()
-                }
-
-            })
-
-    }//END GET
+//    fun getById(api: String, body:JSONObject, callBack: CallBack) {
+//        val client = AsyncHttpClient(true, 80, 443)
+//        val con_body = StringEntity(body.toString())
+//        //GET to API
+//        client.get(context, api, con_body, "application/json",
+//            object : JsonHttpResponseHandler(){
+//                override fun onSuccess(
+//                    statusCode: Int,
+//                    headers: Array<out Header>?,
+//                    response: JSONArray
+//                ) {
+//                    callBack.onSuccess(response.toString())
+//                    //Toast.makeText(context, "Response $response ", Toast.LENGTH_SHORT).show()
+//                }
+//                override fun onFailure(
+//                    statusCode: Int,
+//                    headers: Array<out Header>?,
+//                    responseString: String?,
+//                    throwable: Throwable?
+//                ) {
+//                    Toast.makeText(context, "Error Occurred"+throwable.toString(), Toast.LENGTH_LONG).show()
+//                }
+//
+//            })
+//
+//    }//END GET
 
     //PUT
     fun put(api: String, jsonData: JSONObject){

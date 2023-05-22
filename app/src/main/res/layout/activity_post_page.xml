@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post_page"
+    android:orientation="vertical"
+    android:background="#791878">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:hint="Enter the user id"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/identity_place"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:hint="Enter the name"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/name_place"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:hint="Enter other details"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/others_place"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Salary"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background = "#ffffff"
+        android:id="@+id/salary"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Department"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:background = "#ffffff"
+        android:id="@+id/department"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:id="@+id/btnsave"/>
+
+
+
+</LinearLayout>

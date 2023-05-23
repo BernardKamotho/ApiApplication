@@ -14,9 +14,11 @@
         android:theme="@style/Theme.ApiApplication"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateEmployee"
+            android:exported="false" />
+        <activity
             android:name=".GetEmployee"
             android:exported="false" />
-
         <activity
             android:name=".Post_page"
             android:exported="false" />

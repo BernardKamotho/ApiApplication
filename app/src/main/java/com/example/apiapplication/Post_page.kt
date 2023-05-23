@@ -20,7 +20,7 @@ class Post_page : AppCompatActivity() {
         val btnsave = findViewById<Button>(R.id.btnsave)
         btnsave.setOnClickListener {
 
-        // create a json object that will enable you to hold values from the edit texts
+        //create a json object that will enable you to hold values from the edit texts
         val body = JSONObject()
 
         // next is to add the id number, username, others, salary and department to the json object that you had created

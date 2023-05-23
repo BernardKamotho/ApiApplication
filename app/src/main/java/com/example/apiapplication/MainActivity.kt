@@ -13,11 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // creating an intent to move to the next page
 
-        val star = findViewById<Button>(R.id.post_btn)
+        val post = findViewById<Button>(R.id.post_btn)
         val get = findViewById<Button>(R.id.get_btn)
         val update = findViewById<Button>(R.id.update_btn)
 
-        star.setOnClickListener {
+        post.setOnClickListener {
             val x = Intent(applicationContext, Post_page::class.java)
             startActivity(x)
         }
@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         update.setOnClickListener {
-            val x = Intent(applicationContext, Post_page::class.java)
+            val x = Intent(applicationContext, UpdateEmployee::class.java)
+            startActivity(x)
         }
 
 

@@ -11,6 +11,8 @@ class UpdateEmployee : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_update_employee)
 
+        // get the elements by their ids
+
         val salary = findViewById<EditText>(R.id.salarytwo)
         val id_number = findViewById<EditText>(R.id.id_numbertwo)
         val btn = findViewById<Button>(R.id.btnupdate)

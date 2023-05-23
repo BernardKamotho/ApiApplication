@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val post = findViewById<Button>(R.id.post_btn)
         val get = findViewById<Button>(R.id.get_btn)
         val update = findViewById<Button>(R.id.update_btn)
+        val delete = findViewById<Button>(R.id.delete_page)
 
         post.setOnClickListener {
             val x = Intent(applicationContext, Post_page::class.java)
@@ -29,6 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         update.setOnClickListener {
             val x = Intent(applicationContext, UpdateEmployee::class.java)
+            startActivity(x)
+        }
+        delete.setOnClickListener {
+            val x = Intent(applicationContext, DeleteEmployee::class.java)
             startActivity(x)
         }
 
